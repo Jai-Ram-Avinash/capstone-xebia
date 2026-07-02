@@ -1,0 +1,5 @@
+mfa_enabled,edr_enabled,backup_strategy,phishing_training,incident_response_plan,patch_management,encryption,third_party_risk,previous_claims,risk_category
+False,True,No,False,False,False,True,High,True,Critical
+True,True,Yes,True,True,True,True,Low,False,Low
+False,False,No,False,False,False,False,High,True,Critical
+True,True,Yes,True,False,True,True,Medium,False,Medium
