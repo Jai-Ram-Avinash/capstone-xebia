@@ -20,7 +20,7 @@ This repository contains a modular FastAPI + Streamlit proof of concept for cybe
 - Start the API: `uvicorn main:app --reload`
 - Open new terminal,
   `cd cyber-underwriting-poc`
-  `source venv/bin/activate`
+  `source venv/bin/activate` 
   Start the dashboard: `streamlit run frontend/app.py`
 
 ## API Endpoints
