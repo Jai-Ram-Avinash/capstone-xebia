@@ -247,30 +247,31 @@ The project includes historical underwriting data in `sample_data/historical_und
 ## 📸 Screenshots
 
 Screenshots are stored in `docs/screenshots/`. Add your screenshots using these names:
-- `01-home-page.png` - Home page overview
-- `02-company-assessment.png` - Assessment form and results
-- `03-risk-dashboard.png` - Risk Dashboard with results table
-- `04-ai-report.png` - AI Underwriting Report page
-##  Future Enhancements
 
-- [ ] Add charting/visualization to Risk Dashboard
-- [ ] Data export (CSV/PDF reports)
-- [ ] Advanced filtering and search
-- [ ] User authentication & role-based access
-- [ ] Real-time API key validation
-- [ ] Multi-tenancy support
-- [ ] Integration with insurance platforms
-- [ ] Compliance reporting (SOC2, ISO 27001)
+### Home Page
+![Home Page](docs/screenshots/01-home-page.png)
+- Overview and quick start guide
+- How It Works workflow
+- Key features
 
-## 🤝 Contributing
+### Company Assessment
+![Company Assessment](docs/screenshots/02-company-assessment.png)
+- Interactive form with 13 assessment fields
+- Risk scoring results
+- Premium calculation
 
-This is a Xebia capstone project. For contributions or questions, contact the development team.
+### Risk Dashboard
+![Risk Dashboard](docs/screenshots/03-risk-dashboard.png)
+- Historical results table
+- Summary metrics and analytics
 
-## 📄 License
-
-Internal Xebia project - confidential
+### AI Underwriting Report
+![AI Report](docs/screenshots/04-ai-report.png)
+- Detailed company analysis
+- Executive summary
+- Recommendations
 
 ---
 
 **Last Updated**: 2026-07-15  
-**Status**: ✅ MVP Complete - All Core Features Functional
+**Status**: ✅ Production Ready
