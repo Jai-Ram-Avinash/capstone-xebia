@@ -126,6 +126,27 @@ def run_underwriting(payload: UnderwritingRequest, db: Session = Depends(get_db)
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
 
+@router.get("/results")
+def list_results(db: Session = Depends(get_db)) -> list[dict[str, Any]]:
+    result_repo = ResultRepository(db)
+    results = result_repo.get_all()
+    company_repo = CompanyRepository(db)
+    
+    output = []
+    for result in results:
+        company = company_repo.get_by_id(result.company_id)
+        output.append({
+            "id": result.id,
+            "company_id": result.company_id,
+            "company_name": company.company_name if company else "Unknown",
+            "industry": company.industry if company else "Unknown",
+            "risk_score": result.risk_score,
+            "risk_level": result.risk_level,
+            "premium": result.premium,
+        })
+    return output
+
+
 @router.get("/results/{result_id}")
 def get_result(result_id: int, db: Session = Depends(get_db)) -> dict[str, Any]:
     result = ResultRepository(db).get_by_id(result_id)

@@ -18,3 +18,6 @@ class ResultRepository:
 
     def get_by_id(self, result_id: int) -> UnderwritingResult | None:
         return self.session.query(UnderwritingResult).filter(UnderwritingResult.id == result_id).first()
+
+    def get_all(self) -> list[UnderwritingResult]:
+        return self.session.query(UnderwritingResult).all()
